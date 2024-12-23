@@ -2,9 +2,7 @@ package com.creatio.crm.language.basics;
 
 /**
  * Assignment 2: Product Data Storage with 3D Array
- * 
- * This program demonstrates storing and displaying hierarchical product data
- * using a 3D array.
+ * Using a 3D Array.
  * Author:SumitSagar
  * Version: 1.0.0
  */
