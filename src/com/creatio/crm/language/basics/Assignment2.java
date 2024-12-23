@@ -6,7 +6,7 @@ package com.creatio.crm.language.basics;
  * This program demonstrates storing and displaying hierarchical product data
  * using a 3D array without using loops for display.
  * 
- * Author: [Your Name] Date: [Today's Date]
+ * Author:SumitSagar
  */
 
 public class Assignment2 {
