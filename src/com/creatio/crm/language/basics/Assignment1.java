@@ -1,19 +1,15 @@
 package com.creatio.crm.language.basics;
 
 /**
- * Java Program: Demonstrating Variables, Data Types, and Print Statements
- * This program defines various real-world examples using appropriate
- * data types in Java. It also illustrates different ways of printing
- * output to the console, including formatted and inline outputs.
- * 
+ * Assignment 1: Data Types
+ * Different ways of printing
  * Author: SumitSagar
  * Version: 1.0
  */
 public class Assignment1 {
 
     public static void main(String[] args) {
-        // Section 1: Basic Variables with Examples
-
+        
         // Temperature of a city in degrees Celsius.
         double cityTemperature = 25.5;
         System.out.println("Temperature of the city in Celsius: " + cityTemperature);
@@ -34,7 +30,6 @@ public class Assignment1 {
         String emailAddress = "sumit.sagar.108@gmail.com";
         System.out.println("Email address: " + emailAddress);
 
-        // Section 2: Geographic and Personal Details
 
         // Coordinates of a location (latitude, longitude).
         double latitude = 37.7749;
@@ -53,7 +48,6 @@ public class Assignment1 {
         String favoriteColor = "Blue";
         System.out.println("Favorite color: " + favoriteColor);
 
-        // Section 3: Numbers and Measurements
 
         // Current year.
         int currentYear = 2023;
@@ -71,7 +65,6 @@ public class Assignment1 {
         char bloodType = 'A';
         System.out.println("Blood type: " + bloodType);
 
-        // Section 4: Textual Information
 
         // Title of a book.
         String bookTitle = "To Kill a Mockingbird";
@@ -101,17 +94,5 @@ public class Assignment1 {
         double distanceBetweenCities = 200.5;
         System.out.printf("Distance between two cities: %.1f km%n", distanceBetweenCities);
 
-        // Section 5: Summary and Usage Notes
-        /**
-         * The program demonstrates:
-         * 1. How to use appropriate data types for real-world scenarios.
-         * 2. The importance of clear and readable variable naming conventions.
-         * 3. Different ways to print values using System.out methods:
-         *    - println() for new-line output.
-         *    - print() for inline output.
-         *    - printf() for formatted output.
-         *
-         * Note: The program is modular and easy to expand for additional examples.
-         */
     }
 }
