@@ -54,8 +54,8 @@ public class Assignment1 {
         System.out.println("Current year: " + currentYear);
 
         // Number of followers on a social media platform.
-        int followers = 1000000; 
-        System.out.printf("Number of followers: %,d%n", followers);
+        int numberOfFollowers = 1000000;; 
+        System.out.printf("Number of followers: %,d%n", numberOfFollowers);
 
         // Rating of a movie.
         float movieRating = 7.5f;
