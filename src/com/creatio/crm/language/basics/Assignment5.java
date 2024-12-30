@@ -45,18 +45,17 @@ public class Assignment5 {
         Random random = new Random();
 
        
-        randomNumbers[0] = random.nextInt(100) + 1;
-        randomNumbers[1] = random.nextInt(100) + 1;
-        randomNumbers[2] = random.nextInt(100) + 1;
-        randomNumbers[3] = random.nextInt(100) + 1;
-        randomNumbers[4] = random.nextInt(100) + 1;
-        randomNumbers[5] = random.nextInt(100) + 1;
-        randomNumbers[6] = random.nextInt(100) + 1;
-        randomNumbers[7] = random.nextInt(100) + 1;
-        randomNumbers[8] = random.nextInt(100) + 1;
-        randomNumbers[9] = random.nextInt(100) + 1;
+        randomNumbers[0] = 40;
+        randomNumbers[1] = 10;
+        randomNumbers[2] = 78;
+        randomNumbers[3] = 67;
+        randomNumbers[4] = 43;
+        randomNumbers[5] = 23;
+        randomNumbers[6] = 22;
+        randomNumbers[7] = 21;
+        randomNumbers[8] = 56;
+        randomNumbers[9] = 78;
 
-        System.out.println("Array of random numbers: " + Arrays.toString(randomNumbers));
 
         System.out.println("Sum of 3rd and 5th values: " + (randomNumbers[2] + randomNumbers[4]));
 
