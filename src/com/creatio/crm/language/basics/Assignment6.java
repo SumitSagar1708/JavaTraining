@@ -15,17 +15,18 @@ import java.util.List;
  */
 
 public class Assignment6 {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // List of transactions
-        int[] transactions = {50000, -2000, 3000, -15000, -200, -300, 4000, -3000};
+        int A[] = {50000, -2000, 3000, -15000, -200, -300, 4000, -3000};
 
-        int creditTransaction = 0, 
-        	debitTransaction = 0, 
-        	totalCreditTransaction = 0, 
-        	totalDebitTransaction = 0, 
-        	suspiciousCount = 0;
+        int creditTransaction = 0,
+            debitTransaction = 0,
+            totalCreditTransaction = 0,
+            totalDebitTransaction = 0,
+            suspiciousCount = 0;
 
-        for (int transaction : transactions) {
+        for (int i = 0; i < A.length; i++) { 
+            int transaction = A[i]; 
             if (transaction > 0) {
                 creditTransaction++;
                 totalCreditTransaction += transaction;
@@ -50,5 +51,4 @@ public class Assignment6 {
         System.out.printf("Remaining balance: %d%n", totalCreditTransaction + totalDebitTransaction);
         System.out.printf("Suspicious transactions: %d%n", suspiciousCount);
     }
-
 }
