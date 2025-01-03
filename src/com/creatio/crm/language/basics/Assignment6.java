@@ -44,11 +44,11 @@ public class Assignment6 {
             }
         }
 
-        System.out.printf("Total credit transactions: %d%n", creditTransaction);
-        System.out.printf("Total debit transactions: %d%n", debitTransaction);
-        System.out.printf("Total credited: %d%n", totalCreditTransaction);
-        System.out.printf("Total debited: %d%n", Math.abs(totalDebitTransaction));
-        System.out.printf("Remaining balance: %d%n", totalCreditTransaction + totalDebitTransaction);
-        System.out.printf("Suspicious transactions: %d%n", suspiciousCount);
+        System.out.println("Total credit transactions:"+ creditTransaction);
+        System.out.println("Total debit transactions: "+ debitTransaction);
+        System.out.println("Total credited: "+ totalCreditTransaction);
+        System.out.println("Total debited: "+ Math.abs(totalDebitTransaction));
+        System.out.println("Remaining balance: "+ totalCreditTransaction + totalDebitTransaction);
+        System.out.println("Suspicious transactions: "+ suspiciousCount);
     }
 }
