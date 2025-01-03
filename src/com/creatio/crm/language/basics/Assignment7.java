@@ -23,14 +23,14 @@ package com.creatio.crm.language.basics;
 public class Assignment7 {
 
 	public static void main(String[] args) {
-		// Input details
+		
 		String customerName = "John Doe";
 		int creditScore = 720;
 		double income = 55000.0;
 		boolean isEmployed = true;
 		double debtToIncomeRatio = 35.0;
 
-		// loan eligibility 
+		
 		String eligibility;
 		String reason = "";
 
@@ -58,7 +58,7 @@ public class Assignment7 {
 			reason = "Credit score too low.";
 		}
 
-		// Print the result
+		
 		System.out.println("Customer: " + customerName);
 		System.out.println("Loan Eligibility: " + eligibility);
 		if (!reason.isEmpty())
