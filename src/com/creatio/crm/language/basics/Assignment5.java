@@ -42,7 +42,6 @@ public class Assignment5 {
         // Create an array to store random numbers
         
         int[] randomNumbers = new int[10];
-        Random random = new Random();
 
        
         randomNumbers[0] = 40;
