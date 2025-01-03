@@ -29,14 +29,14 @@ public class Assignment6 {
             int transaction = A[i]; 
             if (transaction > 0) {
                 creditTransaction++;
-                totalCreditTransaction += transaction;
+                totalCreditTransaction = totalCreditTransaction + transaction;
                 if (transaction > 10000) {
                     System.out.println("Suspicious credit transaction: " + transaction);
                     suspiciousCount++;
                 }
             } else {
                 debitTransaction++;
-                totalDebitTransaction += transaction;
+                totalDebitTransaction =totalDebitTransaction +  transaction;
                 if (transaction < -10000) {
                     System.out.println("Suspicious debit transaction: " + transaction);
                     suspiciousCount++;
