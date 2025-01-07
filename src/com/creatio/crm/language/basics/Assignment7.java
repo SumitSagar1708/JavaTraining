@@ -22,47 +22,42 @@ package com.creatio.crm.language.basics;
 
 public class Assignment7 {
 
-	public static void main(String[] args) {
-		
-		String customerName = "John Doe";
-		int creditScore = 720;
-		double income = 55000.0;
-		boolean isEmployed = true;
-		double debtToIncomeRatio = 35.0;
+    public static void main(String[] args) {
 
-		
-		String eligibility;
-		String reason = "";
+        String customerName = "John Doe";
+        int creditScore = 720;
+        double income = 55000.0;
+        boolean isEmployed = true;
+        double debtToIncomeRatio = 35.0;
 
-		if (creditScore > 750) {
-			eligibility = "Approved (High Credit Score)";
-		} else if (creditScore >= 650) {
-			if (income >= 50000) {
-				if (isEmployed) {
-					if (debtToIncomeRatio < 40) { 
-						eligibility = "Approved";
-					} else {
-						eligibility = "Denied (High Debt-to-Income Ratio)";
-						reason = "Debt-to-income ratio too high.";
-					}
-				} else {
-					eligibility = "Denied (Unemployed)";
-					reason = "Not currently employed.";
-				}
-			} else {
-				eligibility = "Denied (Low Income)";
-				reason = "Income too low.";
-			}
-		} else {
-			eligibility = "Denied (Low Credit Score)";
-			reason = "Credit score too low.";
-		}
+        String eligibility = "Denied"; // Default to denied
+        String reason = "";
 
-		
-		System.out.println("Customer: " + customerName);
-		System.out.println("Loan Eligibility: " + eligibility);
-		if (!reason.isEmpty())
-			System.out.println("Reason: " + reason);
-	}
+        if (creditScore > 750) {
+            eligibility = "Approved (High Credit Score)";
+        } else if (creditScore >= 650 && income >= 50000 && isEmployed && debtToIncomeRatio < 40) {
+            eligibility = "Approved";
+        } else {
+          if (creditScore < 650){
+            reason = "Credit score too low.";
+          }
+          else if (income < 50000){
+            reason = "Income too low.";
+          }
+          else if (!isEmployed){
+            reason = "Not currently employed.";
+          }
+          else if (debtToIncomeRatio >= 40){
+            reason = "Debt-to-income ratio too high.";
+          }
+
+        }
+
+        System.out.println("Customer: " + customerName);
+        System.out.println("Loan Eligibility: " + eligibility);
+        if (!reason.isEmpty()) {
+            System.out.println("Reason: " + reason);
+        }
+    }
 }
 
