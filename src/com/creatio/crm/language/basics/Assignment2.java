@@ -10,8 +10,8 @@ package com.creatio.crm.language.basics;
 public class Assignment2 {
 	public static void main(String[] args) {
 		/// Categories and Sub categories 
-        String[] mainCategories = {"Groceries", "Electronics"};        
-        String[] subcategories = {"Beverages", "Snacks", "Dairy Products", "Produce"};
+        //String[] mainCategories = {"Groceries", "Electronics"};        
+        //String[] subcategories = {"Beverages", "Snacks", "Dairy Products", "Produce"};
 		
         // Define a 3D array to store products
         String[][][] products = new String[2][4][5];

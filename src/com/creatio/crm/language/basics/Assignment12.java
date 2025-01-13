@@ -1,5 +1,12 @@
 package com.creatio.crm.language.basics;
 
+/**
+ * Assignment 12: Arrays and Loops
+ * Print the numbers in diamond-shaped pyramid of numbers.
+ * Author:SumitSagar
+ * Version: 1.0.0
+ */
+
 public class Assignment12 {
 
 	public static void main(String[] args) {
